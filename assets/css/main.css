@@ -462,7 +462,7 @@ template {
 .header-inder {
 
 }
-.section{
+.list-top{
   border: 1px dashed rgb(0, 89, 255);
   background: #ff8f8f;
   margin-top: 170px;
@@ -642,4 +642,9 @@ input {
     border-style: inset;
     border-color: initial;
     border-image: initial;
+}
+.content-main {
+  border: 1px dashed rgb(0, 89, 255);
+  background: #ff8f8f;
+  margin-top: 170px;
 }

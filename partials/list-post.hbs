@@ -1,0 +1,27 @@
+<div class="section">
+
+    <div class="article">
+        {{!-- 列表标题的头部 --}}
+        <div class="header-title">
+            <a class="post-title-link" href="{{url}}">{{{title}}}</a>
+            <span class="post-main">
+                {{!-- 列表时间 --}}
+                <span class="post-time">
+                    <span class="post-meta-item-icon">
+                        <i class="fa fa-calendar-o"></i>
+                    </span>
+                    <span class="post-meta-item-text">发表于</span>
+                    <time>{{date format='YYYY-MM-DD'}}</time>
+                </span>&nbsp; | &nbsp; {{!-- 列表标签 --}}
+                <span class="post-meta">
+                    {{#if tags}} {{tags}} {{/if}}
+                </span>
+            </span>
+        </div>
+        {{!-- 列表内容 --}}
+        <div class="post-dec">
+            <p>{{excerpt words="33"}}</p>
+        </div>
+    </div>
+
+</div>
