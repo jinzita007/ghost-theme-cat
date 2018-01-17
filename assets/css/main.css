@@ -451,30 +451,33 @@ template {
 * 增加样式
 */
 .header {
-    border: 1px dashed rgb(255, 102, 0);
+    /*border: 1px dashed rgb(255, 102, 0);*/
     padding: 1rem 1rem;
-    position: fixed;
+    /*position: fixed;*/
     top: 0;
     right: 0;
     left: 0;
-    background: #c9c9c9;
+    background: #d3e4f8;
+    /*background: #2592FC;*/
+   
 }
 .header-inder {
 
 }
 .list-top{
-  border: 1px dashed rgb(0, 89, 255);
-  background: #ff8f8f;
-  margin-top: 170px;
+  /*border: 1px dashed rgb(0, 89, 255);
+  background: #ff8f8f;*/
+  /*margin-top: 166px;*/
 }
 .article{
-  border: 1px dashed rgb(255, 8, 0);
-  background: #e4e4e4;
+  /*border: 1px dashed rgb(255, 8, 0);*/
+  /*background: #e4e4e4;*/
+  background: #fff;
   margin: 15px 15px;
   padding: 15px 15px;
 }
 .pagination{
-  border: 1px dashed rgb(0, 255, 34);
+    /*border: 1px dashed rgb(0, 255, 34);*/
     position: relative;
     height: 2em;
     margin: 0;
@@ -496,42 +499,59 @@ template {
   height: 1.334em;
 }*/
 .header-title{
-  border: 1px dashed rgb(255, 0, 0);
-  background-color: rgb(247, 248, 255);
+  /*border: 1px dashed rgb(255, 0, 0);*/
+  color: #5E676D;
   padding: 10px;
 }
-.post-time {
-  border: 1px dashed rgb(150, 0, 105);
+.header-title a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #26282A;
 }
+/*.post-time {
+  border: 1px dashed rgb(150, 0, 105);
+}*/
 .post-main{
   margin-top: 10px;
   display: block;
-  border: 1px dashed rgb(255, 0, 0);
+  font-size: 14px;
+  /*border: 1px dashed rgb(255, 0, 0);*/
+}
+a.post-title-link {
+  font-size: 24px;
 }
 .post-meta{
-  border: 1px dashed rgb(255, 0, 0);
-  background-color: rgb(197, 204, 255);
+  /*border: 1px dashed rgb(255, 0, 0);*/
+  background-color: #E0E4E9;
   margin: 10px 0px 0px 0px;
-}
-.post-meta a{
-  border: 1px dashed rgb(17, 150, 0);
-  background-color: rgb(255, 238, 4);
+  border-radius:4px;
+  /*#E0E4E9;*/
 
 }
+.post-meta a{
+  /*border: 1px dashed rgb(17, 150, 0);*/
+  /*background-color: rgb(255, 238, 4);*/
+
+}
+span.span-a a{
+  padding: 5px;
+}
 .post-dec p{
+  font-size: 14px;
   padding: 10px;
   margin: 0.5em 0 0;
-  border: 1px dashed rgb(255, 0, 0);
-  background-color: bisque
+  /*border: 1px dashed rgb(255, 0, 0);*/
+  /*background-color: bisque;*/
+  color: #2a2a2a;
 }
 .footer {
-    border: 1px dashed rgb(255, 0, 0);
+    /*border: 1px dashed rgb(255, 0, 0);*/
     position: relative;
     padding-top: 20px;
     padding-bottom: 60px;
 }
 .footer-inter {
-  border: 1px dashed rgb(255, 0, 0);
+  /*border: 1px dashed rgb(255, 0, 0);*/
   margin: 10px;
 }
 .ghost-footer {
@@ -562,8 +582,8 @@ template {
 .site-nav-left{
   height: 68px;
   text-align: center;
-  border: 1px dashed #ff8f8f;
-  background-color: aliceblue
+  /*border: 1px dashed #ff8f8f;
+  background-color: aliceblue*/
 }
 /*.nav {
   flex-direction: row;
@@ -576,6 +596,8 @@ template {
     margin: 0;
 }
 .nav li a {
+  text-decoration: none;
+    color: #5E676D;
     padding: 10px 12px;
     opacity: .8;
 }
@@ -591,7 +613,7 @@ template {
 }
 .btn-secondary {
     color: #212529;
-    background-color: #95a5a6;
+    background-color: #BBB1FB;
     border-color: #95a5a6;
 }
 .btn {
@@ -644,7 +666,25 @@ input {
     border-image: initial;
 }
 .content-main {
-  border: 1px dashed rgb(0, 89, 255);
-  background: #ff8f8f;
-  margin-top: 170px;
+  /*border: 1px dashed rgb(0, 89, 255);*/
+  background: #fff;
+  /*margin-top: 170px;*/
+  margin-top: 5px;
+  padding: 25px;
+}
+
+body {
+  background-color:#E6ECF0;
+}
+a.newer-posts,a.older-posts {
+  color: #343a40;
+  border: 1px solid #dee2e6;
+  background-color: #d3dada;
+  text-decoration: none;
+  padding: 5px;
+}
+.site-nav-logo {
+  text-decoration: none;
+  font-size: 24px;
+  color: #2a2a2a;
 }
