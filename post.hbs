@@ -1,0 +1,42 @@
+{{!< default}}
+
+ {{> "site-nav"}}
+
+    <div class="container">
+        <div class="wrap">
+            <div class="content-main">
+                {{#post}} {{!-- 详情文章 --}}
+                <div class="content-title">
+                    <h1>{{title}}</h1>
+                    <span class="post-main">
+                        {{!-- 详情时间 --}}
+                        <span class="post-time">
+                            <span class="post-meta-item-icon">
+                                <i class="fa fa-calendar-o"></i>
+                            </span>
+                            <span class="post-meta-item-text">发表于</span>
+                            <time>{{date format='YYYY-MM-DD'}}</time>
+                        </span>&nbsp; | &nbsp; {{!-- 详情标签 --}}
+                        <span class="post-meta">
+                            {{#if tags}} {{tags}} {{/if}}
+                        </span>
+                    </span>
+                </div>
+                {{!-- 详情内容 --}}
+                <div class="content-dec">
+
+                    {{!--
+                    <ul>
+                        {{#foreach tags}}
+                        <li>{{name}}</li>
+                        {{/foreach}}
+                    </ul>--}} {{content}}
+
+                </div>
+
+
+                {{/post}}
+            </div>
+        </div>
+    </div>
+    <script>hljs.initHighlightingOnLoad();</script>
