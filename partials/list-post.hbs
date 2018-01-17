@@ -14,13 +14,17 @@
                     <time>{{date format='YYYY-MM-DD'}}</time>
                 </span>&nbsp; | &nbsp; {{!-- 列表标签 --}}
                 <span class="post-meta">
-                    {{#if tags}} {{tags}} {{/if}}
+                    <span class="span-a">{{#if tags}} {{tags}} {{/if}}</span>
                 </span>
             </span>
         </div>
         {{!-- 列表内容 --}}
         <div class="post-dec">
             <p>{{excerpt words="33"}}</p>
+        </div>
+        {{!-- 阅读按钮 --}}
+        <div class="post-full-footer-right">
+            <a class="author-card-button" href="{{url}}">阅读</a>
         </div>
     </div>
 
