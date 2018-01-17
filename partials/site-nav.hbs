@@ -1,0 +1,21 @@
+<div class="header">
+    <div class="header-inder">
+        <nav class="site-nav">
+            <div class="site-nav-left">
+                {{#if @blog.logo}}
+                <a class="site-nav-logo" href="{{@blog.url}}">
+                    <img src="{{@blog.logo}}" alt="{{@blog.title}}" />
+                </a>
+                {{else}}
+                <a class="site-nav-logo" href="{{@blog.url}}">{{@blog.title}}</a>
+                {{/if}} {{#if @blog.navigation}} {{navigation}} {{/if}}
+            </div>
+            <div class="site-nav-right">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">搜索</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+</div>
