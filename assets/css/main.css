@@ -707,6 +707,46 @@ a.newer-posts,a.older-posts {
   color: #ced4da;
 }
 
+
+.search-box{
+    margin-bottom: 10px;
+}
+
+.search-results {
+    position:absolute;
+    z-index: 1000;
+}
+
+.search-button{
+    background-color: #1B95E0;
+    color: white;
+}
+
 .results-hide{
     display: none;
 }
+#results {
+  text-align: center;
+  list-style: none;
+  
+}
+
+#results-main {
+  width: 65%;
+  margin: 0 auto;
+  background: #fff;
+}
+#results a {
+  line-height: 40px;
+  display: block;
+  border-bottom: 1px solid #eee;
+  text-decoration: none;
+}
+#results a:hover {
+  background: #eee;
+}
+.list-group-item:hover {
+  
+}
+
+

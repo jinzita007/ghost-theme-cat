@@ -233,14 +233,14 @@ blockquote,dl,ol,p,ul {
 	margin: 0 0 1.5em
 }
 
-ol,ul {
+/*ol,ul {
 	padding-left: 1.3em;
 	padding-right: 1.5em
-}
+}*/
 
-ol ol,ol ul,ul ol,ul ul {
+/*ol ol,ol ul,ul ol,ul ul {
 	margin: .5em 0 1em
-}
+}*/
 
 ul {
 	list-style: disc
@@ -250,11 +250,11 @@ ol {
 	list-style: decimal
 }
 
-li {
+/*li {
 	margin: .5em 0;
 	padding-left: .3em;
 	line-height: 1.6em
-}
+}*/
 
 dt {
 	float: left;
