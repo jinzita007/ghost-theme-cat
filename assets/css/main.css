@@ -853,3 +853,67 @@ a.newer-posts,a.older-posts {
 pre {
   margin: 0 0 1.5em;
 }
+
+/* 标签云 */
+/*.tag-cloud{
+   width: 480px;
+   margin: 5em auto 2.5em;
+}*/
+.tagcloud ul {
+  overflow: hidden;
+	margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+}
+.tagcloud ul li {
+  line-height:30px;
+  white-space: nowrap;
+	display: inline-block;
+  margin: 0 0 .3em 1em;
+  padding: 0;
+}
+.tagcloud ul li a {
+	position: relative;
+	display: inline-block;
+	max-width: 100px;
+	height: 28px;
+	line-height: 28px;
+	padding: 0 2.5em 0 1em;
+	background-color: #fff;
+	border: 1px solid #f3f3f3;
+	border-radius: 3px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	color: #333;
+	font-size: 13px;
+	text-decoration: none;
+	-webkit-transition: .2s;
+	transition: .2s;
+}
+.tagcloud li span {
+	position: absolute;
+	top: 3px;
+	right: 3px;
+	z-index: 2;
+	width: 22px;
+	height: 22px;
+	line-height: 22px;
+	background-color: #79c8fd;
+	border-radius: 100%;
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+	-webkit-transition: .2s;
+	transition: .2s;
+}
+.tagcloud ul li a:hover {
+	background-color: #79c8fd;
+	border: 1px solid #79c8fd;
+	color: #fff;
+}
+.tagcloud ul li a:hover span {
+	background-color: #fff;
+	color: #3498db;
+}

@@ -1,0 +1,26 @@
+{{!< default}} 
+
+{{> "site-nav"}}
+
+    <div class="wrap">
+        <div class="content">
+            <div class="tag-cloud">
+                <div class="tag-cloud-title">
+                    <div class="tagcloud">
+                        {{#get "tags" limit="all" include="count.posts"}} {{#foreach tags}}
+                        <ul>
+                            <li>
+                                <a href="{{url}}" post-num="{{count.posts}}" class="tags-cloud">{{name}}
+                                    <span>{{count.posts}}</span>
+                                </a>
+
+                            </li>
+                        </ul>
+
+                        {{/foreach}} 
+                        {{/get}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
