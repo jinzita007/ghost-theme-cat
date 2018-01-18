@@ -1,9 +1,8 @@
 <div class="section">
-
     <div class="article">
         {{!-- 列表标题的头部 --}}
         <div class="header-title">
-            <a class="post-title-link" href="{{url}}">{{{title}}}</a>
+            <a class="post-title-link" href="{{url}}">{{title}}</a>
             <span class="post-main">
                 {{!-- 列表时间 --}}
                 <span class="post-time">
@@ -20,7 +19,9 @@
         </div>
         {{!-- 列表内容 --}}
         <div class="post-dec">
-            <p>{{excerpt words="33"}}</p>
+            {{!--
+            <p>{{excerpt words="33"}}</p> --}}
+            <p>{{twitter_description}}</p>
         </div>
         {{!-- 阅读按钮 --}}
         <div class="post-full-right">
