@@ -19,5 +19,17 @@
 
     {{ghost_foot}}
 </body>
-
+<script>
+    //原生JS实时监听input框输入值
+        var input = document.getElementById('search-field');
+        input.oninput = function () {
+            if (input.value === '') {
+                console.log(input.value);
+                $(".list-top").removeClass("results-hide");
+            } else {
+                console.log(input.value);
+                $(".list-top").addClass("results-hide");
+            }
+        }  
+</script>
 </html>
