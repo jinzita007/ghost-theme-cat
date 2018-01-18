@@ -707,6 +707,9 @@ a.newer-posts,a.older-posts {
   color: #ced4da;
 }
 
+.post-title-link:hover {
+  text-decoration: none
+}
 
 .search-box{
     margin-bottom: 10px;
