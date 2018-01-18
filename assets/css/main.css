@@ -748,5 +748,105 @@ a.newer-posts,a.older-posts {
 .list-group-item:hover {
   
 }
+/* 文章归档 */
 
+.content-wrap {
+  margin: 0 auto;
+  width: 54%;
+  background: #fff;
+  padding: 15px 15px;
+}
+#content {
+  margin: 30px;
+  padding: 0px;
+}
+.post-title .post-title-link{
+  text-decoration: none;
+}
 
+.posts-collapse .post-title {
+    margin-left: 60px;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Lato, "PingFang SC", "Microsoft YaHei", sans-serif;
+    line-height: inherit;
+}
+
+.posts-collapse .post-header {
+    position: relative;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    transition-property: border;
+    border-bottom: 1px dashed #ccc;
+}
+.posts-collapse .post-header::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 6px;
+    height: 6px;
+    margin-left: -4px;
+    background: #bbb;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    transition-property: background;
+}
+.page-archive .posts-collapse::after {
+    top: 20px;
+    left: 0;
+    margin-left: -2px;
+    width: 4px;
+    height: 100%;
+    background: #f5f5f5;
+    z-index: -1;
+}
+.page-archive .posts-collapse .archive-move-on {
+    position: absolute;
+    top: 11px;
+    left: 0;
+    margin-left: -6px;
+    width: 10px;
+    height: 10px;
+    opacity: .5;
+    background: #555;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.posts-collapse .post {
+    margin: 30px 0;
+}
+.page-archive .posts-collapse {
+    position: relative;
+    z-index: 1010;
+}
+.posts-collapse .post-title a {
+    color: #666;
+    border-bottom: none;
+}
+
+.posts-collapse .post-metas {
+    position: absolute;
+    font-size: 12px;
+    left: 20px;
+    top: 2px;
+}
+.page-archive .posts-collapse::before, .page-archive .posts-collapse::after {
+    content: " ";
+    position: absolute;
+}
+.page-archive .archive-page-counter {
+    position: relative;
+    top: 3px;
+    left: 20px;
+}
+.post-title a {
+  font-size: 14px;
+}
+.posts-collapse .collection-title h2 {
+    margin-left: 20px;
+}

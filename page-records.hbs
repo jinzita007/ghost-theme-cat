@@ -1,0 +1,53 @@
+{{!< default}}
+
+{{> "site-nav"}}
+
+<div class="content-wrap page-archive">
+    <div id="content" class="content">
+        <section id="posts" class="posts-collapse">
+            <span class="archive-move-on"></span>
+            <span class="archive-page-counter">好! 目前共计&nbsp;{{#get "posts"}}{{pagination.total}}{{/get}}&nbsp;篇日志。 继续努力。</span>
+            <div id="hidden-temp-container" style="display: none;">
+                {{#get "posts" limit="all"}} {{#foreach posts}}
+                <article class="" itemscope="" itemtype="http://schema.org/Article">
+                    <header class="post-header">
+                        <div class="post-title">
+                            <a class="post-title-link" href="{{url}}" itemprop="url">
+                                <span itemprop="name">{{title}}</span>
+                            </a>
+                        </div>
+                        <div class="post-metas">
+                            <time year="{{date format='YYYY'}}">
+                                {{date format='MM-DD'}}
+                            </time>
+                        </div>
+                    </header>
+                </article>
+                {{/foreach}} {{/get}}
+            </div>
+        </section>
+    </div>
+</div>
+
+<script src="//cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+<script>
+    var counter = 0;
+    var currentYear;
+    $("#hidden-temp-container article").each(function () {
+            if (counter == 0) {
+                currentYear = $(this).find("time").attr("year");
+                $("#posts").html($("#posts").html() + '<div class="collection-title">' +
+                    '<h2 class="archive-year motion-element" id="archive-year-' + currentYear + '" style="opacity: 1;">' + currentYear + '</h2>' +
+                    '</div>');
+            }
+            if ($(this).find("time").attr("year") < currentYear) {
+                currentYear = $(this).find("time").attr("year");
+                $("#posts").html($("#posts").html() + '<div class="collection-title">' +
+                    '<h2 class="archive-year motion-element" id="archive-year-' + currentYear + '" style="opacity: 1;">' + currentYear + '</h2>' +
+                    '</div>');
+            }
+            $(this).addClass("post post-type-normal");
+            $("#posts").append($(this));
+            counter += 1;
+        });
+</script>
