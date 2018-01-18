@@ -850,3 +850,6 @@ a.newer-posts,a.older-posts {
 .posts-collapse .collection-title h2 {
     margin-left: 20px;
 }
+pre {
+  margin: 0 0 1.5em;
+}
