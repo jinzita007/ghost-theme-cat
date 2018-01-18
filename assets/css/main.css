@@ -474,7 +474,7 @@ template {
   /*border: 1px dashed rgb(255, 8, 0);*/
   /*background: #e4e4e4;*/
   background: #fff;
-  /*margin: 15px 15px;*/
+  margin: 15px 15px;
   padding: 40px 40px;
 }
 /*.section {
@@ -673,9 +673,8 @@ input {
 .content-main {
   /*border: 1px dashed rgb(0, 89, 255);*/
   background: #fff;
-  /*margin-top: 170px;*/
-  margin-top: 5px;
-  padding: 45px;
+  margin: 15px 15px;
+  padding: 40px 40px;
 }
 
 body {
@@ -757,10 +756,9 @@ a.newer-posts,a.older-posts {
 /* 文章归档 */
 
 .content-wrap {
-  margin: 0 auto;
-  width: 60%;
   background: #fff;
-  padding: 15px 15px;
+  margin: 15px 15px;
+  padding: 40px 40px;
 }
 #content {
   margin: 30px;

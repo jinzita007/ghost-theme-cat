@@ -2,30 +2,32 @@
 
 {{> "site-nav"}}
 
-<div class="content-wrap page-archive">
-    <div id="content" class="content">
-        <section id="posts" class="posts-collapse">
-            <span class="archive-move-on"></span>
-            <span class="archive-page-counter">好! 目前共计&nbsp;{{#get "posts"}}{{pagination.total}}{{/get}}&nbsp;篇日志。 继续努力。</span>
-            <div id="hidden-temp-container" style="display: none;">
-                {{#get "posts" limit="all"}} {{#foreach posts}}
-                <article class="" itemscope="" itemtype="http://schema.org/Article">
-                    <header class="post-header">
-                        <div class="post-title">
-                            <a class="post-title-link" href="{{url}}" itemprop="url">
-                                <span itemprop="name">{{title}}</span>
-                            </a>
-                        </div>
-                        <div class="post-metas">
-                            <time year="{{date format='YYYY'}}">
-                                {{date format='MM-DD'}}
-                            </time>
-                        </div>
-                    </header>
-                </article>
-                {{/foreach}} {{/get}}
-            </div>
-        </section>
+<div class="wrap">
+    <div class="content-wrap page-archive">
+        <div id="content" class="content">
+            <section id="posts" class="posts-collapse">
+                <span class="archive-move-on"></span>
+                <span class="archive-page-counter">好! 目前共计&nbsp;{{#get "posts"}}{{pagination.total}}{{/get}}&nbsp;篇日志。 继续努力。</span>
+                <div id="hidden-temp-container" style="display: none;">
+                    {{#get "posts" limit="all"}} {{#foreach posts}}
+                    <article class="" itemscope="" itemtype="http://schema.org/Article">
+                        <header class="post-header">
+                            <div class="post-title">
+                                <a class="post-title-link" href="{{url}}" itemprop="url">
+                                    <span itemprop="name">{{title}}</span>
+                                </a>
+                            </div>
+                            <div class="post-metas">
+                                <time year="{{date format='YYYY'}}">
+                                    {{date format='MM-DD'}}
+                                </time>
+                            </div>
+                        </header>
+                    </article>
+                    {{/foreach}} {{/get}}
+                </div>
+            </section>
+        </div>
     </div>
 </div>
 
