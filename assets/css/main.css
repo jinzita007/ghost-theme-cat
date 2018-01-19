@@ -578,7 +578,13 @@ span.span-a a{
   margin: 0 auto;
   width: 60%;
 }
+#results-main {
+  width: 58%;
+  margin: 0 auto;
+  background: #fff;
 }
+}
+
 .nav {
     display: flex;
     justify-content:center;
@@ -737,11 +743,6 @@ a.newer-posts,a.older-posts {
   
 }
 
-#results-main {
-  width: 58%;
-  margin: 0 auto;
-  background: #fff;
-}
 #results a {
   line-height: 40px;
   display: block;
