@@ -583,6 +583,15 @@ span.span-a a{
   margin: 0 auto;
   background: #fff;
 }
+
+
+}
+#results-main{
+  background: #fff;
+}
+
+#results a:hover {
+  background: #eee;
 }
 
 .nav {
@@ -749,9 +758,7 @@ a.newer-posts,a.older-posts {
   border-bottom: 1px solid #eee;
   text-decoration: none;
 }
-#results a:hover {
-  background: #eee;
-}
+
 .list-group-item:hover {
   
 }
