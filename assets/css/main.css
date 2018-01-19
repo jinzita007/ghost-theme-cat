@@ -470,13 +470,7 @@ template {
   background: #ff8f8f;*/
   /*margin-top: 166px;*/
 }
-.article{
-  /*border: 1px dashed rgb(255, 8, 0);*/
-  /*background: #e4e4e4;*/
-  background: #fff;
-  margin: 15px 15px;
-  padding: 40px 40px;
-}
+
 /*.section {
   margin: 15px 15px;
 }*/
@@ -583,9 +577,50 @@ span.span-a a{
   margin: 0 auto;
   background: #fff;
 }
-
-
+.content-main {
+  /*border: 1px dashed rgb(0, 89, 255);*/
+  background: #fff;
+  margin: 15px 15px;
+  padding: 40px 40px;
 }
+.content-wrap {
+  background: #fff;
+  margin: 15px 15px;
+  padding: 40px 40px;
+}
+#content {
+  margin: 30px;
+  padding: 0px;
+}
+.article{
+  background: #fff;
+  margin: 15px 15px;
+  padding: 40px 40px;
+}
+}
+
+
+@media screen and (max-width: 50rem) {
+.content-main {
+  background: #fff;
+  padding: 2rem;
+}
+.content-wrap {
+  background: #fff;
+}
+#content {
+  padding: 2rem;
+}
+.section {
+  background: #fff;
+  margin: 15px 0px;
+}
+.article{
+  padding: 2rem;
+}
+}
+
+
 #results-main{
   background: #fff;
 }
@@ -686,12 +721,7 @@ input {
     border-color: initial;
     border-image: initial;
 }
-.content-main {
-  /*border: 1px dashed rgb(0, 89, 255);*/
-  background: #fff;
-  margin: 15px 15px;
-  padding: 40px 40px;
-}
+
 
 body {
   background-color:#E6ECF0;
@@ -764,15 +794,8 @@ a.newer-posts,a.older-posts {
 }
 /* 文章归档 */
 
-.content-wrap {
-  background: #fff;
-  margin: 15px 15px;
-  padding: 40px 40px;
-}
-#content {
-  margin: 30px;
-  padding: 0px;
-}
+
+
 .post-title .post-title-link{
   text-decoration: none;
 }
