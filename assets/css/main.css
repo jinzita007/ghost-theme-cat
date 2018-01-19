@@ -573,9 +573,11 @@ span.span-a a{
   margin-left: 15px;
   margin-right: 15px;
 }*/
-.wrap {
+@media screen and (min-width: 50rem) {
+  .wrap {
   margin: 0 auto;
   width: 60%;
+}
 }
 .nav {
     display: flex;
