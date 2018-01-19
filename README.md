@@ -31,15 +31,6 @@
 ### 标签云
 ![](http://p2scp2n8u.bkt.clouddn.com/Snip20180119_14.png)
 
-## 移动端效果图
-### 列表页
-![](http://p2scp2n8u.bkt.clouddn.com/Snip20180119_3.png)
-### 搜索页
-![](http://p2scp2n8u.bkt.clouddn.com/Snip20180119_2.png)
-### 归档页
-![](http://p2scp2n8u.bkt.clouddn.com/Snip20180119_4.png)
-### 标签云
-![](http://p2scp2n8u.bkt.clouddn.com/Snip20180119_5.png)
 
 
 
