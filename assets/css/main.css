@@ -981,3 +981,10 @@ td.hljs-ln-code {
     font: 300 16px/1.6 "Microsoft Yahei","Helvetica Neue",helvetica,Arial,sans-serif;
     color: #bbb;
 }
+
+p.small {
+    font-size: 12px;
+    line-height: 1.5;
+    display: block;
+    text-align: center;
+}
