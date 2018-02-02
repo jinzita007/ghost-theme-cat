@@ -476,11 +476,15 @@ template {
 .pagination .prev, .pagination .next, .pagination .page-number {
     color: #7b8a8b;
     border-bottom: 0;
-    border-top: 1px solid #eee;
+    /*border-top: 1px solid #eee;*/
     transition-property: border-color;
     transition-duration: .2s;
     transition-timing-function: ease-in-out;
     transition-delay: 0s;
+}
+.page-number:hover {
+   text-decoration:none;
+   color: #1B95E0;
 }
 
 .page-number-basic, .pagination .prev, .pagination .next, .pagination .page-number, .pagination .space {
@@ -628,6 +632,9 @@ time.post-meta-time {
 }
 .article{
   padding: 2rem;
+  border-top: 1px solid #eee;
+  padding-bottom: 10px;
+
 }
 }
 
