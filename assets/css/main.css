@@ -790,6 +790,9 @@ a.newer-posts,a.older-posts {
 #results {
   text-align: center;
   list-style: none;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 40px 20px;
   
 }
 
