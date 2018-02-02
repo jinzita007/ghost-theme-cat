@@ -579,8 +579,8 @@ span.span-a a{
   /*margin: 0 auto;
   width: 60%;*/
   max-width: 680px;
-margin: 0 auto;
-padding: 0 40px 20px;
+  margin: 0 auto;
+  padding: 0 40px 20px;
 }
 #results-main {
   /*width: 58%;
@@ -589,14 +589,14 @@ padding: 0 40px 20px;
 }
 .content-main {
   /*border: 1px dashed rgb(0, 89, 255);*/
-  background: #fff;
-  margin: 15px 15px;
-  padding: 40px 40px;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 40px 20px;
 }
 .content-wrap {
-  background: #fff;
-  margin: 15px 15px;
-  padding: 40px 40px;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 40px 20px;
 }
 #content {
   margin: 30px;
