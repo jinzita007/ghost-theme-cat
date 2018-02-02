@@ -458,7 +458,7 @@ template {
     right: 0;
     left: 0;
     /*background: #d3e4f8;*/
-    background: linear-gradient(to bottom right, #9dd0ff, rgb(36, 142, 248));
+    /*background: linear-gradient(to bottom right, #9dd0ff, rgb(36, 142, 248));*/
     /*background: #2592FC;*/
    
 }

@@ -536,7 +536,7 @@ h5,h6 {
 	display: block;
 	margin-right: 24px;
 	padding: 11px 0;
-	color: #fff;
+	/*color: #fff;*/
 	font-size: 1.7rem;
 	line-height: 1em;
 	font-weight: 700;
@@ -573,7 +573,7 @@ h5,h6 {
 
 .nav li a {
 	padding: 10px 12px;
-	color: #fff;
+	/*color: #fff;*/
 	opacity: .8
 }
 
