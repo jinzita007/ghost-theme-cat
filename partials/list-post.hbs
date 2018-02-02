@@ -21,6 +21,9 @@
             <p>{{excerpt words="33"}}</p> --}}
             <p>{{twitter_description}}</p>
         </div>
+        <span class="tags">
+            {{#if tags}} {{tags separator=" "}} {{/if}}
+        </span>
         {{!-- 阅读按钮 --}}
      {{!-- <div class="post-full-right">
             <a class="author-button" href="{{url}}">阅读</a>
