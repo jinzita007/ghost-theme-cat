@@ -1,0 +1,71 @@
+{{#is "tag"}}
+<nav class="pagination" page-info="tag">
+    {{/is}} {{#is "index"}}
+    <nav class="pagination" page-info="index">
+        {{/is}} {{#if prev}}
+        <a class="page-number" href="{{page_url prev}}">
+            <i class="icon-angle-left"></i>
+        </a>
+        {{/if}}
+        <div id="pageInfo" currentPage="{{page}}" pageInTotal="{{pages}}" style="display: none;"></div>
+        <link href="https://cdn.bootcss.com/font-awesome/3.0.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="https://cdn.bootcss.com/jquery/2.2.0/jquery.min.js"></script>
+        <script>
+            var currentPage = parseInt($("#pageInfo").attr("currentPage"));
+            var pagesInTotal = parseInt($("#pageInfo").attr("pageInTotal"));
+            console.log(currentPage, pagesInTotal);
+            var outPutList = new Array();
+            if (pagesInTotal <= 6) {
+                for (var i = 0; i < pagesInTotal; i++) {
+                    outPutList.push(i + 1);
+                }
+            } else {
+                if (currentPage == 1 || currentPage == 2 || currentPage == 3) {
+                    outPutList.push(1);
+                    outPutList.push(2);
+                    outPutList.push(3);
+                    outPutList.push(4);
+                    outPutList.push(0);
+                    outPutList.push(pagesInTotal);
+                } else if (currentPage == pagesInTotal || currentPage == pagesInTotal - 1 || currentPage == pagesInTotal - 2) {
+                    outPutList.push(1);
+                    outPutList.push(0);
+                    outPutList.push(pagesInTotal - 3)
+                    outPutList.push(pagesInTotal - 2);
+                    outPutList.push(pagesInTotal - 1);
+                    outPutList.push(pagesInTotal);
+                } else {
+                    outPutList.push(1);
+                    outPutList.push(0);
+                    outPutList.push(currentPage - 1);
+                    outPutList.push(currentPage);
+                    outPutList.push(currentPage + 1);
+                    outPutList.push(0);
+                    outPutList.push(pagesInTotal);
+                }
+            }
+            var loop = outPutList.length;
+            var lastElement = $("#pageInfo");
+            for (var j = 0; j < loop; j++) {
+                console.log(j, outPutList[j]);
+                if (outPutList[j] == 0) {
+                    lastElement = lastElement.before('<span class="space">…</span>');
+                } else {
+                    if (outPutList[j] == currentPage) {
+                        lastElement = lastElement.before('<span class="page-number current">' + outPutList[j] + '</span>');
+                    } else {
+                        if ($("#get-tag-name").length > 0) {
+                            lastElement = lastElement.before('<a class="page-number" href="/tag/' + $("#get-tag-name").attr("tag-name") + '/page/' + outPutList[j] + '/">' + outPutList[j] + '</a>');
+                        } else {
+                            lastElement = lastElement.before('<a class="page-number" href="/page/' + outPutList[j] + '/">' + outPutList[j] + '</a>');
+                        }
+                    }
+                }
+            }
+            console.log(outPutList);
+        </script> {{#if next}}
+        <a class="page-number extend next" rel="next" href="{{page_url next}}">
+            <i class="icon-angle-right"></i>
+        </a>
+        {{/if}}
+    </nav>
