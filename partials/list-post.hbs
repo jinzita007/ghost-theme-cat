@@ -3,20 +3,11 @@
         {{!-- 列表标题的头部 --}}
         <div class="header-title">
             <a class="post-title-link" href="{{url}}">{{title}}</a>
+             {{!-- 列表时间 --}}
+            <aside class="datas">
+                <time>{{date format='MM-DD'}}</time>         
+            </aside>
             <span class="post-main">
-                {{!-- 列表时间 --}}
-                 <aside class="datas">
-                    <time>{{date format='MM-DD'}}</time>
-                    <!--<span class="post-time">
-                        <span class="post-meta-item-icon">
-                            <i class="fa fa-calendar-o"></i>
-                        </span>
-                        </span>-->
-                        {{!--
-                        <span class="post-meta-item-text">发表于</span> --}}
-                        <!--<time>{{date format='YYYY-MM-DD'}}</time>-->
-                    
-                 </aside>
                 
                 {{!-- 列表标签 --}}
                  {{!--<span class="post-meta">
