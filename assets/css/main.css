@@ -498,13 +498,16 @@ template {
 }*/
 .header-title{
   /*border: 1px dashed rgb(255, 0, 0);*/
-  color: #5E676D;
-  padding: 10px;
+  /*color: #5E676D;*/
+  /*padding: 10px;*/
 }
 .header-title a {
-  font-size: 16px;
+  /*font-size: 16px;
   text-decoration: none;
-  color: rgb(74, 79, 85);
+  color: rgb(74, 79, 85);*/
+  color: #2b2b2b;
+    display: block;
+    font: 700 18px/1.8 "Microsoft Yahei","Helvetica Neue",helvetica,Arial,sans-serif;
 }
 /*.post-time {
   border: 1px dashed rgb(150, 0, 105);
@@ -536,12 +539,16 @@ span.span-a a{
   font-size: 14px;
 }
 .post-dec p{
-  font-size: 14px;
-  padding: 10px;
+  /*font-size: 14px;
+  padding: 10px;*/
   /*margin: 0.5em 0 0;*/
   /*border: 1px dashed rgb(255, 0, 0);*/
   /*background-color: bisque;*/
-  color: #3c484e;
+  /*color: #3c484e;*/
+  font: 400 14px/1.5em "Microsoft Yahei","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #aaa;
+    max-width: 525px;
+    margin-top: 2px;
 }
 .footer {
     /*border: 1px dashed rgb(255, 0, 0);*/
@@ -569,13 +576,16 @@ span.span-a a{
 }*/
 @media screen and (min-width: 50rem) {
   .wrap {
-  margin: 0 auto;
-  width: 60%;
+  /*margin: 0 auto;
+  width: 60%;*/
+  max-width: 680px;
+margin: 0 auto;
+padding: 0 40px 20px;
 }
 #results-main {
-  width: 58%;
+  /*width: 58%;
   margin: 0 auto;
-  background: #fff;
+  background: #fff;*/
 }
 .content-main {
   /*border: 1px dashed rgb(0, 89, 255);*/
@@ -593,9 +603,11 @@ span.span-a a{
   padding: 0px;
 }
 .article{
-  background: #fff;
+  /*background: #fff;
   margin: 15px 15px;
-  padding: 40px 40px;
+  padding: 40px 40px;*/
+  padding-top: 20px;
+  border-top: 1px solid #eee;
 }
 }
 
@@ -723,9 +735,9 @@ input {
 }
 
 
-body {
+/*body {
   background-color:#E6ECF0;
-}
+}*/
 a.newer-posts,a.older-posts {
   color: #343a40;
   border: 1px solid #dee2e6;
@@ -976,4 +988,11 @@ td.hljs-ln-numbers {
 /* for block of code */
 td.hljs-ln-code {
     padding-left: 10px !important;
+}
+.datas {
+    float: right;
+    position: relative;
+    top: 1px;
+    font: 300 16px/1.6 "Microsoft Yahei","Helvetica Neue",helvetica,Arial,sans-serif;
+    color: #bbb;
 }

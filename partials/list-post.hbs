@@ -5,16 +5,23 @@
             <a class="post-title-link" href="{{url}}">{{title}}</a>
             <span class="post-main">
                 {{!-- 列表时间 --}}
-                <span class="post-time">
-                    <span class="post-meta-item-icon">
-                        <i class="fa fa-calendar-o"></i>
-                    </span>
-                    <span class="post-meta-item-text">发表于</span>
-                    <time>{{date format='YYYY-MM-DD'}}</time>
-                </span>&nbsp; | &nbsp; {{!-- 列表标签 --}}
-                <span class="post-meta">
+                 <aside class="datas">
+                    <time>{{date format='MM-DD'}}</time>
+                    <!--<span class="post-time">
+                        <span class="post-meta-item-icon">
+                            <i class="fa fa-calendar-o"></i>
+                        </span>
+                        </span>-->
+                        {{!--
+                        <span class="post-meta-item-text">发表于</span> --}}
+                        <!--<time>{{date format='YYYY-MM-DD'}}</time>-->
+                    
+                 </aside>
+                
+                {{!-- 列表标签 --}}
+                 {{!--<span class="post-meta">
                     <span class="span-a">{{#if tags}} {{tags}} {{/if}}</span>
-                </span>
+                </span>--}}
             </span>
         </div>
         {{!-- 列表内容 --}}
@@ -24,9 +31,9 @@
             <p>{{twitter_description}}</p>
         </div>
         {{!-- 阅读按钮 --}}
-        <div class="post-full-right">
+     {{!-- <div class="post-full-right">
             <a class="author-button" href="{{url}}">阅读</a>
-        </div>
+        </div>--}}
     </div>
 
 </div>
