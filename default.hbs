@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://highlightjs.org/static/demo/styles/xcode.css">
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.1.0/highlightjs-line-numbers.min.js"></script>
 
     <title>{{title}}</title>
     {{!-- 这个标签输出SEO结构化数据和其他重要的设置--}} {{ghost_head}}
@@ -47,14 +48,10 @@
     });
 
 </script>
-
+<script>hljs.initHighlightingOnLoad();</script>
+<script>hljs.initLineNumbersOnLoad();</script>
 <script>
-    $(document).ready(function () {
-            $('pre code').each(function (i, block) {
-                hljs.highlightBlock(block);
-            });
-            $('pre code').css('background','rgb(241, 241, 241)')
-        });
+    $('pre code').css('background','rgb(241, 241, 241)')    
 </script>
 
 </html>
