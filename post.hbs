@@ -18,20 +18,16 @@
                             <time>{{date format='YYYY-MM-DD'}}</time>
                         </span>&nbsp; | &nbsp; {{!-- 详情标签 --}}
                         <span class="post-meta">
-                            {{#if tags}} {{tags}} {{/if}}
+                         {{#if tags}} 
+                             {{tags separator=" "}}
+                         {{/if}}
+                            
                         </span>
                     </span>
                 </div>
                 {{!-- 详情内容 --}}
                 <div class="content-dec">
-
-                    {{!--
-                    <ul>
-                        {{#foreach tags}}
-                        <li>{{name}}</li>
-                        {{/foreach}}
-                    </ul>--}} {{content}}
-
+                    {{content}}
                 </div>
 
 
@@ -39,3 +35,7 @@
             </div>
         </div>
     </div>
+
+    <script>
+   
+    </script>

@@ -515,9 +515,7 @@ template {
 a.post-title-link {
   font-size: 24px;
 }
-.post-meta{
-  /*border: 1px dashed rgb(255, 0, 0);*/
-  background-color: #E0E4E9;
+.post-meta{  
   margin: 10px 0px 0px 0px;
   border-radius:4px;
   /*#E0E4E9;*/
