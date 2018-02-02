@@ -535,6 +535,7 @@ tags {
 }
 .tags a:hover {
     text-decoration: none;
+    background-color: rgb(187, 213, 231);
 }
 span.span-a a{
   padding: 5px;
