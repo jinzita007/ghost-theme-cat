@@ -597,12 +597,12 @@ time.post-meta-time {
   margin: 0 auto;
   background: #fff;*/
 }
-.content-main {
-  /*border: 1px dashed rgb(0, 89, 255);*/
+/*.content-main {
+  border: 1px dashed rgb(0, 89, 255);
   max-width: 680px;
   margin: 0 auto;
   padding: 0 40px 20px;
-}
+}*/
 .content-wrap {
   max-width: 680px;
   margin: 0 auto;
