@@ -553,6 +553,9 @@ span.span-a a{
   max-width: 525px;
   margin-top: 2px;
 }
+time.post-meta-time {
+  color: #848d95;
+}
 .footer {
     /*border: 1px dashed rgb(255, 0, 0);*/
     position: relative;
